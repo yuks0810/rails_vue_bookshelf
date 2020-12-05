@@ -19,6 +19,10 @@ FileUtils.chdir APP_ROOT do
 
   # API通信を実現するライブラリ
   system 'yarn add axios'
+  # Vue Router
+  system 'yarn add vue-router'
+  # Vuex
+  system 'yarn add vuex'
 
   # Install JavaScript dependencies
   # system('bin/yarn')
