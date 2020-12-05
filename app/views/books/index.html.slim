@@ -1,0 +1,24 @@
+.container.js-booksIndex
+  h1.purple.lighten-5.center
+    | [Rails+Vue.js]~Bookshelf~
+  .row.blue.lighten-5
+    - @books.each do |book|
+      .col.s4.m6
+        .card.btn
+          |  <span class="card-title" v-on:click="setBookInfo(
+          = book.id
+          | )">
+          = book.title
+  .row[v-show="bookInfoBool"]
+    .col.s12.m12
+      .card.blue-grey.darken-1
+        .card-content.white-text
+          span.card-title
+            |  {{ bookInfo.title }}
+          .detail
+            |  {{ bookInfo.author }}
+          .detail
+            |  {{ bookInfo.publisher }}
+          .detail
+            |  {{ bookInfo.genre }}
+= javascript_pack_tag 'book'

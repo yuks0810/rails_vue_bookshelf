@@ -25,6 +25,10 @@ gem 'jbuilder', '~> 2.7'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
+# View
+gem 'slim-rails'
+gem 'html2slim'
+
 # CSSフレームワーク(Materialize)
 gem 'materialize-sass'
 gem 'material_icons'
