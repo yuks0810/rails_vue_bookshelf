@@ -9,6 +9,10 @@ https://qiita.com/Moo_Moo_Farm/items/afacfe4349af6a106253
 
 ## システム要件
 ### Ruby version
+uby 2.6.0p0 (2018-12-25 revision 66547) [x86_64-darwin19]
+
+### Rail version
+Rails 6.0.3.4
 
 ### System dependencies
 - Rails
