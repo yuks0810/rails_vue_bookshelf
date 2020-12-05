@@ -90,3 +90,43 @@ Running via Spring preloader in process 86683
       create    app/views/books
       create    app/views/books/index.html.erb
 ```
+### rails seedコマンド
+
+```bash
+$ rails db:seed
+```
+
+## APIの作成
+
+```bash
+$ rails g controller api::books
+```
+
+上記コマンドで以下が作成される
+```bash
+Running via Spring preloader in process 88866
+      create  app/controllers/api/books_controller.rb
+      invoke  erb
+      create    app/views/api/books
+```
+コントローラーにこのように書く。renderでjsonを返すようにする
+```rb
+class Api::BooksController < ApplicationController
+  def show
+    @book = Book.find(params[:id])
+    render 'show', formats: 'json', handlers: 'jbuilder'
+  end
+end
+```
+
+`app/views/api/books/show.json.jbuilder`
+```jbuilder
+json.id        @book.id
+json.title     @book.title
+json.author    @book.author
+json.publisher @book.publisher
+json.genre     @book.genre
+
+# 次のコードと同等です。
+# json.extract! @book, :id, :title, :author, :publisher, :genre
+```
