@@ -21,4 +21,5 @@ Things you may want to cover:
 
 * Deployment instructions
 
-* ...
+* github repository
+https://github.com/yuks0810/rails_vue_bookshelf
