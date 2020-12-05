@@ -40,4 +40,6 @@
 yarn-debug.log*
 .yarn-integrity
 
-.vendor/bundle
+## Environment normalization:
+/.bundle
+/vendor/bundle
