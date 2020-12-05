@@ -16,6 +16,8 @@ FileUtils.chdir APP_ROOT do
   puts '== Installing dependencies =='
   system! 'gem install bundler --conservative'
   system('bundle check') || system!('bundle install')
+
+  # API通信を実現するライブラリ
   system 'yarn add axios'
 
   # Install JavaScript dependencies
