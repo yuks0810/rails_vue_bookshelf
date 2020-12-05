@@ -38,3 +38,16 @@ $ rails g controller Home index
 ## vueとrailsの繋ぎこみ(railsのエンドポイント)
 ### 参考：
 https://qiita.com/shohei_ot/items/17c4c3545af9762d998e
+
+## rubocop
+- rubocop-airbnbを使用
+### 基本コマンド
+```bash
+$ rubocop
+```
+
+### rubocop による解析結果を自動修正するオプション（修正されない箇所もあるため注意）
+```bash
+$ rubocop --auto-correct
+$ rubocop -a
+```
