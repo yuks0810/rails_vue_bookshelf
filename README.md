@@ -4,14 +4,26 @@ https://github.com/yuks0810/rails_vue_bookshelf
 ### 参考：
 https://qiita.com/Moo_Moo_Farm/items/afacfe4349af6a106253
 
+## 環境構築
+.README_CREATE_ENV.md 参照
+
 ## システム要件
 ### Ruby version
 
 ### System dependencies
+- Rails
+- Vue.js
+- Webpacke
 
 ### Configuration
 
-### Database creation
+## View
+- Vue.js
+- ERB
+
+## Database
+- sqlite
+<!-- TODO: mysqlに以降 -->
 
 ## How to run the test suite
 
@@ -50,4 +62,16 @@ $ rubocop
 ```bash
 $ rubocop --auto-correct
 $ rubocop -a
+```
+
+### モデル作成
+
+下記コマンドでmodelとmigrationファイルが作成される
+```bash
+$ rails g model Book title:string author:string publisher:string genre:string
+```
+
+その後、下記コマンドでdbに反映
+```bash
+$ rails db:migrate
 ```

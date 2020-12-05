@@ -29,6 +29,10 @@ gem 'jbuilder', '~> 2.7'
 gem 'materialize-sass'
 gem 'material_icons'
 
+gem 'materialize-sass'
+gem 'material_icons'
+gem 'faker'
+
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
 
