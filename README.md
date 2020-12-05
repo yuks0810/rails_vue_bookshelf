@@ -31,6 +31,11 @@ https://qiita.com/Moo_Moo_Farm/items/afacfe4349af6a106253
 
 ## Deployment instructions
 
+## API通信を実現するライブラリを導入
+### axios を利用した API の使用
+#### axios
+URL: https://jp.vuejs.org/v2/cookbook/using-axios-to-consume-apis.html
+
 ## アプリ起動
 ### foreman設定
 `bin/server`ファイルに起動コマンドを記載してある。コマンドを実行するために以下のコマンドをターミナルで実行
