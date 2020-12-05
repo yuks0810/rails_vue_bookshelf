@@ -75,3 +75,18 @@ $ rails g model Book title:string author:string publisher:string genre:string
 ```bash
 $ rails db:migrate
 ```
+### コントローラーを作成
+
+```bash
+$ rails g controller Books index
+```
+
+上記のコマンドを実行すると、下記ファイルが作成される
+```bash
+Running via Spring preloader in process 86683
+      create  app/controllers/books_controller.rb
+       route  get 'books/index'
+      invoke  erb
+      create    app/views/books
+      create    app/views/books/index.html.erb
+```
