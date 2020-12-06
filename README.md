@@ -23,12 +23,10 @@ Rails 6.0.3.4
 
 ## View
 - Vue.js
-- ERB
+- slim
 
 ## Database
-- sqlite
-<!-- TODO: mysqlに以降 -->
-参考：https://qiita.com/h4n24w4/items/7974bef03b20d8d7b6f6
+- mysql
 
 ## How to run the test suite
 
@@ -96,9 +94,9 @@ $ rails g controller Books index
 Running via Spring preloader in process 86683
       create  app/controllers/books_controller.rb
        route  get 'books/index'
-      invoke  erb
+      invoke  slim
       create    app/views/books
-      create    app/views/books/index.html.erb
+      create    app/views/books/index.html.slim
 ```
 ### rails seedコマンド
 
@@ -116,7 +114,7 @@ $ rails g controller api::books
 ```bash
 Running via Spring preloader in process 88866
       create  app/controllers/api/books_controller.rb
-      invoke  erb
+      invoke  slim
       create    app/views/api/books
 ```
 コントローラーにこのように書く。renderでjsonを返すようにする

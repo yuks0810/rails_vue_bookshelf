@@ -2,7 +2,6 @@
   <div id="app">
     <Header />
     <div id="app">
-      <p><%= current_user.name %></p>
       <button @click="alert">alert!</button>
     </div>
     <router-view />

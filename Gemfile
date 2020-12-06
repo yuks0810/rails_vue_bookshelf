@@ -32,6 +32,9 @@ gem 'materialize-sass'
 gem 'material_icons'
 
 # view
+gem 'slim-rails'
+gem 'html2slim'
+
 gem 'materialize-sass'
 gem 'material_icons'
 gem 'faker'
