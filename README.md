@@ -19,7 +19,7 @@ https://qiita.com/Moo_Moo_Farm/items/afacfe4349af6a106253
 
 ## View
 - Vue.js
-- ERB
+- slim
 
 ## Database
 - sqlite
@@ -92,9 +92,9 @@ $ rails g controller Books index
 Running via Spring preloader in process 86683
       create  app/controllers/books_controller.rb
        route  get 'books/index'
-      invoke  erb
+      invoke  slim
       create    app/views/books
-      create    app/views/books/index.html.erb
+      create    app/views/books/index.html.slim
 ```
 ### rails seedコマンド
 
@@ -112,7 +112,7 @@ $ rails g controller api::books
 ```bash
 Running via Spring preloader in process 88866
       create  app/controllers/api/books_controller.rb
-      invoke  erb
+      invoke  slim
       create    app/views/api/books
 ```
 コントローラーにこのように書く。renderでjsonを返すようにする
