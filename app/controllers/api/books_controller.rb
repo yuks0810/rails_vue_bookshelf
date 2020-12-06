@@ -1,5 +1,6 @@
 class Api::BooksController < ApplicationController
   protect_from_forgery except: [:create, :update, :destroy]
+  before_action :authenticate_user!
 
   def index
     @books = Book.all

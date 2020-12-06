@@ -23,6 +23,8 @@ FileUtils.chdir APP_ROOT do
   system 'yarn add vue-router'
   # Vuex
   system 'yarn add vuex'
+  # アラート
+  system 'yarn add vue-swal'
 
   # Install JavaScript dependencies
   # system('bin/yarn')
