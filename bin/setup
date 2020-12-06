@@ -17,6 +17,8 @@ FileUtils.chdir APP_ROOT do
   system! 'gem install bundler --conservative'
   system('bundle check') || system!('bundle install')
 
+  system 'yarn upgrade'
+  system 'yarn install'
   # API通信を実現するライブラリ
   system 'yarn add axios'
   # Vue Router
@@ -25,6 +27,8 @@ FileUtils.chdir APP_ROOT do
   system 'yarn add vuex'
   # アラート
   system 'yarn add vue-swal'
+  # bootstrap
+  system 'yarn add bootstrap-vue '
 
   # Install JavaScript dependencies
   # system('bin/yarn')
