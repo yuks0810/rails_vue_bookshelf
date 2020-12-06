@@ -22,9 +22,7 @@ https://qiita.com/Moo_Moo_Farm/items/afacfe4349af6a106253
 - slim
 
 ## Database
-- sqlite
-<!-- TODO: mysqlに以降 -->
-参考：https://qiita.com/h4n24w4/items/7974bef03b20d8d7b6f6
+- mysql
 
 ## How to run the test suite
 
